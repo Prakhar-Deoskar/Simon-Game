@@ -2,17 +2,6 @@
   box-sizing: border-box;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-/*below is the code*/
 body {
   text-align: center;
   background-color: #011F3F;
