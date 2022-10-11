@@ -3,9 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <!-- Viewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <title>Simon</title>
 
   <!-- Favicon -->
@@ -22,10 +19,15 @@
 
   </script>
 
+
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+
   <h1 id="level-title">Press A Key to Start</h1>
+
   <div class="dropdown">
     <button onClick="myFunction()" class="dropbtn">How to Play</button>
     <div id="myDropdown" class="dropdown-content">
@@ -36,32 +38,30 @@
       <p>• If the player doesn't make any mistake, the game goes on, so it is an endless game!</p>
     </div>
   </div>
-<!--   <div class="container"> -->
-    <div class="row">
-      <div class="col-lg-6 col-md-4">
 
+
+  <div class="container-fluid">
+    <div class="row">
       <div type="button" id="green" class="btn green">
 
       </div>
 
       <div type="button" id="red" class="btn red">
-        </div>
-      </div>
-      </div>
 
+      </div>
+    </div>
+    <button type="button" name="button" class="A" onclick="nextSequence()">A</button>
     <div class="row">
-      <div class="col-lg-6 col-md-4">
-  
+
       <div type="button" id="yellow" class="btn yellow">
 
       </div>
       <div type="button" id="blue" class="btn blue">
 
       </div>
-      </div>
-    </div>
 
-<!--   </div> -->
+    </div>
+  </div>
   <div class="footer">
     <p class="p-footer">©️ Copyright 2022 SimonOnline</p>
   </div>
