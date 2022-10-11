@@ -94,7 +94,7 @@ function startOver() {
   level = 0;
   gamePattern = [];
   started = false;
-  $("h1").text("Game Over, Press any key to start");
+  $("h1").text("Game Over, Press A to re-start");
   $("body").addClass("game-over");
   setTimeout(function(){
     $("body").removeClass("game-over");
