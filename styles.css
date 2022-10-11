@@ -110,6 +110,7 @@ p {
   display: none;
   position: block;
   background-color: #FEF2BF;
+  padding: 0 1em;
   color: #011F3F;
   text-align: left;
   width: 500px;
