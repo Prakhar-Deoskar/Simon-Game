@@ -108,8 +108,9 @@ p {
 }
 
 .dropdown-content {
+  margin-left: -180px;
   display: none;
-  position: block;
+  position: absolute;
   background-color: #FEF2BF;
   padding: 0 1em;
   color: #011F3F;
@@ -160,6 +161,7 @@ p {
   }
 
   .dropdown-content {
+    margin-left: -80px;
     display: none;
     position: block;
     background-color: #FEF2BF;
