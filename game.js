@@ -9,6 +9,7 @@ function nextSequence() {
   level++;
   userClickedPattern = [];
   $("#level-title").text("Level : " + level);
+  document.getElementById("thisButton").disabled = true;
 
   var randomNumber = Math.floor(Math.random() * 4);
   var randomChosenColor = buttonColors[randomNumber];
@@ -58,6 +59,7 @@ $(document).keypress(function() {
     $("#level-title").text("Level : " + level);
     nextSequence();
     started = true;
+    document.getElementById("thisButton").disabled = true;
   }
 })
 
@@ -89,6 +91,7 @@ function checkAnswer(currentLevel) {
 
 
 function startOver() {
+  document.getElementById("thisButton").disabled = false;
   var audio = new Audio("sounds/wrong.mp3")
   audio.play();
   level = 0;
